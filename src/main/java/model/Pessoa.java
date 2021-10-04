@@ -11,10 +11,10 @@ public class Pessoa {
         enderecos = new Endereco[qtdEnd];
     }
 
-    public void addEndeco(Endereco end) {
-        for (Endereco endereco : enderecos) {
-            if (endereco == null) {
-                endereco = end;
+    public void addEndereco(Endereco end) {
+        for (int i = 0; i < enderecos.length; i++) {
+            if(enderecos[i] == null) {
+                enderecos[i] = end;
                 break;
             }
         }
